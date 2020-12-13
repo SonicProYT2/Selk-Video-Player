@@ -27,7 +27,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.6666666666666667em")
                 .setWidth("54.166666666666664em")
                 .setHeight("47.5em")
-                .setCaption("Video")
+                .setCaption("Selk Video Player")
                 .setMinBtn(false)
             );
             
@@ -39,7 +39,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("11.666666666666666em")
                 .setTop("0.8333333333333334em")
                 .setWidth("53.333333333333336em")
-                .setHeight("35em")
+                .setHeight("35.12380952380953em")
                 .setAutoplay(true)
                 .onMediaEvent([
                     {
@@ -85,14 +85,12 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                );
+            );
             
             host.xui_ui_dialog9.append(
                 xui.create("xui.UI.Gallery")
                 .setHost(host,"xui_ui_gallery7")
                 .setDirtyMark(false)
-                .setImgWidth('auto')
-                .setImgHeight('auto')
                 .setItems([
                     {
                         "id":"ad",
@@ -125,6 +123,8 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("9em")
                 .setItemMargin(4)
                 .setItemPadding(4)
+                .setImgWidth("auto")
+                .setImgHeight("auto")
                 .setColumns(4)
                 .setValue("a")
                 .onItemSelected([
@@ -149,7 +149,7 @@ xui.Class('App', 'xui.Module',{
                         "overflow":"overflow-x:auto;overflow-y:hidden"
                     }
                 })
-                );
+            );
             
             return children;
             // ]]Code created by CrossUI RAD Studio
